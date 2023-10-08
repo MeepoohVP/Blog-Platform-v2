@@ -12,7 +12,7 @@ function Blog() {
           Headline Quis magna dolor eu occaecat incididunt.
         </div>
         <div className="text-sm mt-4">
-          <Link to="/Blog-Platform/author" className="flex">
+          <Link to="/Blog-Platform/Author" className="flex">
           <div>
             <i className="bi bi-person-fill text-7xl mr-2 align-middle"></i>
           </div>
