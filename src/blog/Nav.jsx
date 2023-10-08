@@ -42,7 +42,7 @@ function Nav() {
         </div>
         <ul className="text-3xl pb-6 font-base block text-white/[.7] mt-16 lg:mt-0 relative lg:translate-y-0 top-0 lg:inline-flex lg:text-xl lg:text-[#c6c3fa] lg:text-right">
           <li className="text-center lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-            <NavLink to ="/Blog-Platform/Home">
+            <NavLink to ="/Blog-Platform/">
               Home
             </NavLink>
           </li>
@@ -77,7 +77,7 @@ function Nav() {
         </ul>
       </nav>
       <Routes>
-        <Route path='/Blog-Platform/Home' element={<Home/>}/>
+        <Route path='/Blog-Platform/' element={<Home/>}/>
         <Route path='/Blog-Platform/Blog' element={<Blog/>}/>
         <Route path='/Blog-Platform/Write' element={<Write/>}/>
         <Route path='/Blog-Platform/Author' element={<Author/>}/>
