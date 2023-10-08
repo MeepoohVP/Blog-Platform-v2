@@ -42,7 +42,7 @@ function Nav() {
         </div>
         <ul className="text-3xl pb-6 font-base block text-white/[.7] mt-16 lg:mt-0 relative lg:translate-y-0 top-0 lg:inline-flex lg:text-xl lg:text-[#c6c3fa] lg:text-right">
           <li className="text-center lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-            <NavLink to ="/">
+            <NavLink to ="/blog-platform/home">
               Home
             </NavLink>
           </li>
@@ -50,13 +50,13 @@ function Nav() {
             className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500"
             onClick={handleClick}
           >
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/blog-platform/blog">Blog</NavLink>
           </li>
           <li className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-          <NavLink to="/write">Write</NavLink>
+          <NavLink to="/blog-platform/write">Write</NavLink>
           </li>
           <li className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-          <NavLink to="/blog">Faqs</NavLink>
+          <NavLink to="/blog-platform/blog">Faqs</NavLink>
           </li>
           <li className="text-center mt-8 lg:mt-6 lg:mr-3 2xl:mt-12">
             <button className="lg:text-[#9a93f7] lg:shadow lg:shadow-[#9a93f7] text-xl hover:text-[#c6c3fa] duration-500 font-extrabold lg:text-sm p-1 border-[1px] solid border-transparent lg:border-[#9a93f7] hover:lg:border-[#c6c3fa]">
@@ -77,10 +77,10 @@ function Nav() {
         </ul>
       </nav>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/Blog' element={<Blog/>}/>
-        <Route path='/Write' element={<Write/>}/>
-        <Route path='/Author' element={<Author/>}/>
+        <Route path='/Blog-Platform/Home' element={<Home/>}/>
+        <Route path='/Blog-Platform/Blog' element={<Blog/>}/>
+        <Route path='/Blog-Platform/Write' element={<Write/>}/>
+        <Route path='/Blog-Platform/Author' element={<Author/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes></BrowserRouter>
      
