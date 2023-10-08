@@ -42,7 +42,7 @@ function Nav() {
         </div>
         <ul className="text-3xl pb-6 font-base block text-white/[.7] mt-16 lg:mt-0 relative lg:translate-y-0 top-0 lg:inline-flex lg:text-xl lg:text-[#c6c3fa] lg:text-right">
           <li className="text-center lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-            <NavLink to ="/blog-platform/home">
+            <NavLink to ="/Blog-Platform/home">
               Home
             </NavLink>
           </li>
@@ -50,13 +50,13 @@ function Nav() {
             className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500"
             onClick={handleClick}
           >
-            <NavLink to="/blog-platform/blog">Blog</NavLink>
+            <NavLink to="/Blog-Platform/blog">Blog</NavLink>
           </li>
           <li className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-          <NavLink to="/blog-platform/write">Write</NavLink>
+          <NavLink to="/Blog-Platform/write">Write</NavLink>
           </li>
           <li className="text-center mt-12 lg:mt-6 lg:mr-8 2xl:mt-12 hover:lg:text-[#9a93f7] duration-500">
-          <NavLink to="/blog-platform/blog">Faqs</NavLink>
+          <NavLink to="/Blog-Platform/blog">Faqs</NavLink>
           </li>
           <li className="text-center mt-8 lg:mt-6 lg:mr-3 2xl:mt-12">
             <button className="lg:text-[#9a93f7] lg:shadow lg:shadow-[#9a93f7] text-xl hover:text-[#c6c3fa] duration-500 font-extrabold lg:text-sm p-1 border-[1px] solid border-transparent lg:border-[#9a93f7] hover:lg:border-[#c6c3fa]">
