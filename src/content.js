@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';  
+import reportWebVitals from './reportWebVitals';
 import Nav from './blog/Nav';
+import Header from './blog/Header';
+import BoxContent from './blog/BoxContent';
+import Footer from './blog/Footer';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Nav />
+    <Header /><BoxContent /><Footer />
   </React.StrictMode>
 );
 
