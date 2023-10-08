@@ -4,19 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';  
 import Nav from './blog/Nav';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
-const router = createHashRouter([
-  {
-    path: "/*",
-    element: <Nav />,
-  }
-]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router} />
-    
+    <Nav />
   </React.StrictMode>
 );
 
