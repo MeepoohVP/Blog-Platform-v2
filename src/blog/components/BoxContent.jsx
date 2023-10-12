@@ -5,6 +5,16 @@ import Box from "./Box";
 function BoxContent() {
   return (
     <main className="bg-[#fffafa] dark:bg-[#282828]">
+      <div className="mt-2 pb-2 pt-8 md:px-8 lg:px-32 2xl:px-80">
+        <input
+          type="search"
+          className="w-64 py-3 pl-4 text-lg rounded-e-sm rounded-s-lg text-black outline-none solid border-[1px] border-[#9a93f7] shadowpurple"
+          placeholder="Search blog here"
+        />
+        <button className="text-black py-3 px-4 text-lg ml-0.5 bg-pink-300 rounded-s-sm rounded-e-xl searchbutton">
+          <i className="bi bi-search"></i>
+        </button>
+      </div>
       <div className="flex flex-wrap md:px-8 lg:px-32 2xl:px-80">
         <Box /><Box /><Box /> <Box /><Box /><Box /><Box /><Box /><Box /><Box /><Box /><Box /><Box /><Box/><Box /><Box /><Box/><Box />
       </div>
