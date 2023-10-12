@@ -1,5 +1,4 @@
 {
-  "homepage": "https://MeepoohVP.github.io/Blog-Platform",
   "name": "my-blog-platform",
   "version": "0.1.0",
   "private": true,
@@ -15,12 +14,11 @@
     "react-lorem-ipsum": "^1.4.10",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "react-toggle-dark-mode": "^1.1.1",
     "remixicon": "^3.5.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,7 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
 }

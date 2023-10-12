@@ -5,20 +5,20 @@ function Write() {
   const AddTitle = (e) => {
     const postNode = document.createElement("textarea");
     postNode.placeholder = "Title";
-    postNode.className = "mt-8 text-4xl text-white bg-[#404040] pt-2 w-[99%] px-4 outline-none";
+    postNode.className = "mt-8 text-4xl shadow-md mb-4 dark:text-white dark:bg-[#404040] pt-2 w-[99%] px-4 outline-none";
     containerRef.current.appendChild(postNode);
   }
   const AddParagraph = (e) => {
     const postNode = document.createElement("textarea");
     postNode.placeholder = "Paragraph";
     postNode.rows = "5";
-    postNode.className = "text-lg w-[99%] px-4 outline-none mt-4 text-white bg-[#404040] pt-2";
+    postNode.className = "text-lg w-[99%] mb-4 shadow-md px-4 outline-none mt-4 dark:text-white dark:bg-[#404040] pt-2";
     containerRef.current.appendChild(postNode);
   }
   const AddList = (e) => {
     const postNode = document.createElement("ul");
-    postNode.className = "list-disc text-white";
-    postNode.innerHTML = '<li><input class="mt-4 mb-4 bg-[#404040] text-lg outline-none h-10" type="text"/></li>';
+    postNode.className = "list-disc dark:text-white";
+    postNode.innerHTML = '<li><input class="mt-4 mb-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i class="bi bi-x align-base text-xl text-red-400"></i></button></li>';
     containerRef.current.appendChild(postNode);
   }
   
@@ -26,7 +26,7 @@ function Write() {
   return (
     <>
     <form className="w-full h-auto">
-    <div className="relative w-full h-96 Earth bg-cover bg-no-repeat bg-center">
+    <div className="relative w-full h-96 bg-[#181818]/70 dark:bg-[#181818] Earth bg-cover bg-no-repeat bg-center ">
         <div className="w-1/2 md:w-1/4 mx-auto top-1/2 -translate-y-1/2 relative grid grid-cols-1 border border-gray-300 bg-white/50 rounded-lg">
           <div className="rounded-l-lg p-4 flex flex-col justify-center items-center border-0 border-r border-gray-300 ">
             <label
@@ -53,19 +53,19 @@ function Write() {
         </div>
         
     </div>
-    <div className="px-12 md:px-28 lg:px-56 pt-6 bg-[#282828] w-full 2xl:px-64">
-      <div ref={containerRef}><textarea className="text-4xl text-white bg-[#404040] pt-2 w-[99%] px-4 outline-none" type="text" placeholder="Title"></textarea>
-      <textarea rows="5" className="text-lg w-[99%] px-4 outline-none mt-4 text-white bg-[#404040] pt-2" type="text" placeholder="Paragraph"></textarea>
-      <ul className="list-disc text-white">
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+    <div className="px-12 md:px-28 lg:px-56 pt-6 bg-[#f5f5f5] dark:bg-[#282828] w-full 2xl:px-64">
+      <div ref={containerRef}><textarea className="text-4xl shadow-md dark:text-white dark:bg-[#404040] pt-2 w-[99%] px-4 outline-none" type="text" placeholder="Title"></textarea>
+      <textarea rows="5" className="text-lg w-[99%] shadow-md px-4 outline-none mt-4 dark:text-white dark:bg-[#404040] pt-2" type="text" placeholder="Paragraph"></textarea>
+      <ul className="list-disc dark:text-white">
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
         
       </ul>
-      <ol className="list-decimal text-white mb-2">
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
-        <li><input className="mt-4 bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+      <ol className="list-decimal dark:text-white mb-2">
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
+        <li><input className="mt-4 shadow dark:bg-[#404040] text-lg outline-none h-10" type="text"/><button><i className="bi bi-x align-base text-xl text-red-400"></i></button></li>
       </ol>
       </div>
     <button className="mb-4 mr-2 text-[#282828]/[.8] font-bold rounded-sm bg-pink-300/80 hover:bg-pink-300 p-1" onClick={AddTitle}>Add Title</button>

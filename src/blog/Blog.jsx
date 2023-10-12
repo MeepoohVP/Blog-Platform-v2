@@ -7,7 +7,7 @@ function Blog() {
   return (
     <>
       <header className="relative w-full h-96 earth bg-cover bg-no-repeat bg-center"></header>
-      <main className="text-white px-12 md:px-28 lg:px-56 pt-6 bg-[#282828] w-full 2xl:w-5/6 2xl:px-64 2xl:mx-auto pb-8">
+      <main className="dark:text-white px-12 md:px-28 lg:px-56 pt-6 bg-[#f5f5f5] dark:bg-[#282828] w-full 2xl:w-5/6 2xl:px-64 2xl:mx-auto pb-8">
         <div className="text-5xl font-medium">
           Headline Quis magna dolor eu occaecat incididunt.
         </div>
@@ -17,15 +17,15 @@ function Blog() {
             <i className="bi bi-person-fill text-7xl mr-2 align-middle"></i>
           </div>
           <div>
-            <span className="text-base text-white/90">
+            <span className="text-base dark:text-white/90">
               Written by
               <br />
             </span>
-            <span className="text-base text-white/90">
+            <span className="text-base dark:text-white/90">
               Author name
               <br />
             </span>
-            <span className="text-white/60">7 Oct 2023</span>
+            <span className="dark:text-white/60">7 Oct 2023</span>
           </div></Link>
         </div>
         <div className="text-lg mt-8 2xl:flex">
@@ -108,13 +108,13 @@ function Blog() {
             </dd>
           </article>
         </div>
-        <div className="w-[95%] md:w-2/3 mx-auto bg-[#404040] mt-16 pt-3 py-5 px-3 mb-8 rounded-lg">
+        <div className="w-[95%] md:w-2/3 mx-auto bg-pink-50 shadow-lg dark:bg-[#404040] mt-16 pt-3 py-5 px-3 mb-8 rounded-lg">
           <div className="text-xl font-medium">Comment</div>
           <form className="mt-4 text-center relative">
             <textarea
               rows="4"
               placeholder="Add your comment"
-              className="w-[90%] block px-2 py-2 mx-auto bg-[#282828]/[.3] resize-none solid border-[1px] border-white/20 rounded-md outline-none"
+              className="w-[90%] block px-2 py-2 mx-auto bg-white/50 dark:bg-[#282828]/[.3] resize-none solid border-[1px] border-white/20 rounded-md outline-none"
             ></textarea>
             <button
               type="submit"
