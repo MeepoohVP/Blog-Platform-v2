@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { RiBearSmileFill } from "react-icons/ri";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { LoremIpsum, Avatar } from "react-lorem-ipsum";
 import "../../image/Earth.png";
-import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import TopBlog from "./Topblog";
@@ -52,7 +50,7 @@ function Header() {
           </div>
         </div> */}
           <div className="mx-auto dark:text-white w-4/5 md:w-1/2 h-auto text-left text-xl pb-2 bg-transparent pt-2">
-            <div className="mx-4 mb-2 font-bold md:text-2xl"><i className="bi bi-fire"></i> Top Blog</div>
+            <div className="mx-4 mb-2 font-bold md:text-2xl"><i className="bi bi-fire text-orange-600"></i> Top Blog</div>
             <TopBlog bgBlog = {deposit} head = {blogs[9].title}/>
             <TopBlog bgBlog = {trade} head = {blogs[5].title}/>
             <TopBlog bgBlog = {xmas} head = {blogs[11].title}/>
