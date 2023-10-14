@@ -1,24 +1,22 @@
-import React from "react";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import { Link } from "react-router-dom";
-import { useRef, useState } from "react";
-import Box from "./Box";
-import Earth2 from "../../image/Earth2.jpg";
-import jsLearn from "../../image/jslearn.jpg";
-import health from "../../image/health.jpg";
-import halloween from "../../image/halloween.jpg";
-import python from "../../image/python.jpg";
-import trade from "../../image/trade.jpg";
-import design from "../../image/design.jpg";
-import coffee from "../../image/coffee.jpg";
-import game from "../../image/game.jpg";
-import deposit from "../../image/deposit.jpg";
-import graphic from "../../image/graphic.jpg";
-import xmas from "../../image/xmas.jpg";
-function BoxContent() {
-  const data = require("./../data.json");
-  const blogs = data.blogs;
-  const text = useRef();
+import { useState, useRef, useEffect } from "react";
+import Earth2 from "../image/Earth2.jpg";
+import jsLearn from "../image/jslearn.jpg";
+import health from "../image/health.jpg";
+import halloween from "../image/halloween.jpg";
+import python from "../image/python.jpg";
+import trade from "../image/trade.jpg";
+import design from "../image/design.jpg";
+import coffee from "../image/coffee.jpg";
+import game from "../image/game.jpg";
+import deposit from "../image/deposit.jpg";
+import graphic from "../image/graphic.jpg";
+import xmas from "../image/xmas.jpg";
+import Box from "./components/Box";
+import Footer from "./components/Footer";
+function Category() {
+  const data = require("./data.json");
+  const showBlog = useRef();
+  const blogs = data.blogs
   const Allblog = () => {
     return (
      <> <Box
@@ -231,49 +229,51 @@ function BoxContent() {
       </>
     );
   }
+  
   const [box, setBox] = useState(<Allblog/>);
-  const Search = () => {
-    console.log(text.current.value.toLowerCase());
-    setBox(<Allblog/>);
-    for (let index = 0; index < blogs[index]['category'].length; index++) {
-      if (blogs[0]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
+  const changeCategory = (e) => {
+      setBox(<Allblog/>);
+      if (e.target.value === "Programming") {
         setBox(<Programming/>);
-      }
-      if (blogs[1]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
+      };
+      if (e.target.value === "Health") {
         setBox(<Health/>);
+      };
+      if (e.target.value === "Design") {
+        setBox(<Design/>)
       }
-      if (blogs[2]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
-        setBox(<Astronomy/>);
-      }
-      if (blogs[5]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
-        setBox(<Investment/>);
-      }
-      if (blogs[6]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
-        setBox(<Design/>);
-      }
-      if (blogs[3]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
-        setBox(<Celebrate/>);
-      }
-      if (blogs[8]['category'].toLowerCase().indexOf(text.current.value.toLowerCase()) > -1) {
+      if (e.target.value === "Game") {
         setBox(<Game/>);
       }
-    }
+      if (e.target.value === "Celebrate") {
+        setBox(<Celebrate/>);
+      }
+      if (e.target.value === "Astronomy") {
+        setBox(<Astronomy/>);
+      }
+      if (e.target.value === "Investment"){
+        setBox(<Investment/>);
+      }  
   }
+  
+  
   return (
-    <main className="bg-[#fffafa] dark:bg-[#282828]">
-      <div className="mt-2 pb-2 pt-8 md:px-8 lg:px-32 2xl:px-80">
-        <input
-          type="search"
-          className="w-64 py-3 pl-4 text-lg rounded-e-sm rounded-s-lg text-black outline-none solid border-[1px] border-[#9a93f7] shadowpurple"
-          placeholder="Search blog here"
-          ref={text}/>
-        <button className="text-black py-3 px-4 text-lg ml-0.5 bg-pink-300 rounded-s-sm rounded-e-xl searchbutton" onClick={Search}>
-          <i className="bi bi-search"></i>
-        </button>
+    <>
+    <main className="bg-[#fffafa] dark:bg-[#282828] lg:pt-24">
+      <div className="px-2 pt-8 lg:pt-0 md:mx-12 lg:mx-32">
+        <select onChange={changeCategory} className="outline-none p-1 shadow">
+        <option className="" value="All">All</option>
+          <option className="" value="Programming">Programming</option>
+          <option value="Health">Health</option>
+          <option value="Design">Design</option>
+          <option value="Game">Game</option>
+          <option value="Celebrate">Celebrate</option>
+          <option value="Astronomy">Astronomy</option>
+          <option value="Investment">Investment</option>
+        </select>
       </div>
-      <div className="flex flex-wrap md:px-8 lg:px-32 2xl:px-80">
-      {box}
-      </div>
+      <div className="flex flex-wrap md:px-8 lg:px-32 2xl:px-80" ref={showBlog}>
+       {box} </div>
       <div className="text-center mt-8 pb-16">
         <button className="text-[#404040] border-2 border-black/80 dark:border-transparent solid text-3xl py-1 px-3 bg-white/75 hover:bg-black/5 dark:hover:bg-white/90 duration-150 rounded-lg mx-1">
           <i class="bi bi-caret-left-fill"></i>
@@ -283,6 +283,7 @@ function BoxContent() {
         </button>
       </div>
     </main>
+    <Footer/></>
   );
 }
-export default BoxContent;
+export default Category;

@@ -8,6 +8,8 @@ function Blog() {
     <>
       <header className="relative w-full h-96 earth bg-cover bg-no-repeat bg-center"></header>
       <main className="dark:text-white px-12 md:px-28 lg:px-56 pt-6 bg-[#f5f5f5] dark:bg-[#282828] w-full 2xl:w-5/6 2xl:px-64 2xl:mx-auto pb-8">
+        <div className="text-center text-lg text-[#7971EA] dark:text-pink-400"><i className="bi bi-eye-fill"></i>
+        <br/>125</div>
         <div className="text-5xl font-medium">
           Headline Quis magna dolor eu occaecat incididunt.
         </div>
