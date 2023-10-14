@@ -122,7 +122,7 @@ function Blog() {
               type="submit"
               className="absolute bottom-1 right-6 md:right-8 2xl:right-11"
             >
-              <i class="ri-send-plane-2-line text-lg md:text-xl text-white/75"></i>
+              <i class="ri-send-plane-2-line text-lg md:text-xl text-black/75 dark:text-white/75"></i>
             </button>
           </form>
         </div>

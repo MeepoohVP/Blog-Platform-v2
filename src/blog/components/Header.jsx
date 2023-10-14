@@ -28,7 +28,7 @@ function Header() {
         className={`w-full h-auto text-center pt-24 2xl:pt-36 text-[#3a3b3c]/[.7] dark:text-white relative bg-[#f5f5f5] dark:bg-[#181818]`}
         data-aos="fade-up"
       >
-        <RiBearSmileFill className="text-[192px] mx-auto block text-[#7971EA]/[.7] dark:text-[#9a93f7] animate-[pulse_2.5s_linear_infinite]" />
+        <RiBearSmileFill className="text-[192px] mx-auto block text-orange-300/80 dark:text-orange-200 animate-[pulse_2.5s_linear_infinite]" />
         <div className="text-4xl 2xl:text-5xl font-semibold inline bg-gradient-to-r dark:from-[#9a93f7] from-[#7971EA] to-pink-300 dark:to-pink-300 text-transparent bg-clip-text">
           Meepooh blog
         </div>
