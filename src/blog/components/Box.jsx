@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
 function Box(props) {
     return (
-      <div className="allblog duration-500 w-2/3 lg:w-[30%] md:w-[45%] rounded-md overflow-hidden mx-auto mt-8 h-auto dark:bg-[#404040] solid border-[1.25px] border-black/40 hover:border-black dark:border-transparent" data-aos-duration="500">
+      <div className="allblog duration-500 w-4/5 lg:w-[30%] md:w-[45%] rounded-md overflow-hidden mx-auto mt-8 h-auto dark:bg-[#404040] solid border-[1.25px] border-black/40 hover:border-black dark:border-transparent" data-aos-duration="500">
        <Link to="/Blog-Platform/Blog"> <div style={{ 
       backgroundImage: `url(${props.bgBlog})` 
     }} className={`w-full h-56 bg-center bg-cover`}></div>

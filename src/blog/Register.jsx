@@ -103,7 +103,7 @@ function Register() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-[#7971EA] dark:bg-[#9a93f7] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                Sign up
               </button>
             </div>
           </form>
@@ -111,7 +111,7 @@ function Register() {
           <p className="mt-10 text-center text-sm text-gray-500">
             Have account?{' '}
             <Link to="/Blog-Platform/Login" className="font-semibold leading-6 text-[#7971EA] dark:text-[#9a93f7] hover:text-indigo-500">
-              Log in
+              Sign in
             </Link>
           </p>
         </div>

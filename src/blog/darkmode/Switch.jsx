@@ -20,7 +20,8 @@ export default function Switcher() {
 				checked={darkSide}
 				onChange={toggleDarkMode}
 				size={30}
-                className="mx-auto md:text-white lg:text-inherit"
+                className="mx-auto text-white lg:text-inherit"
+				sunColor = "white"
 			/>
 		</>
 	);

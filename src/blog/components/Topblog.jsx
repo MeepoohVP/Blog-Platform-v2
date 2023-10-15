@@ -6,7 +6,7 @@ function TopBlog(props) {
         style={{
           backgroundImage: `url(${props.bgBlog})`,
         }}
-        className="w-1/3 md:w-1/4 h-20 md:h-24 bg-cover bg-center"
+        className="w-1/3 md:w-1/4 h-auto bg-cover bg-center"
       ></div>
       <div className="mx-3 flex-1">
         <div className="text-base mt-1 md:mt-2 md:text-xl font-medium">
